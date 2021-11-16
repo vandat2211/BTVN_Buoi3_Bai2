@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="10"
+    android:padding="10dp"
+    tools:context="com.example.btvn_buoi5_bai1.MainActivity">
+
+    <TextView
+        android:id="@+id/tvRec"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:text="Recent Book"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:gravity="center_vertical"
+
+
+        >
+
+    </TextView>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_weight="8"
+        android:id="@+id/recycleview"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        >
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <ImageButton
+        android:id="@+id/btnAdd"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@drawable/boder"
+        android:src="@drawable/ic_baseline_add_circle_outline_24">
+
+    </ImageButton>
+</LinearLayout>
